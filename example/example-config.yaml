@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+
+# Name of the dockerized container, this will be main tag
+name: dcat
+
+# ROS Distribution for dockerized catkin
+rosdistro:
+  - kinetic
+  - melodic
+
+# Source directory of catkin workspace
+catkin_src: ~/Sandbox/catkin_ws/dcat
