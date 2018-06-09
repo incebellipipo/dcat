@@ -2,6 +2,8 @@
 ---
 
 # Name of the dockerized container, this will be main tag
+# Docker image name'll be:
+#   ${name}:${rosdistro}
 name: dcat
 
 # ROS Distribution for dockerized catkin
@@ -10,4 +12,8 @@ rosdistro:
   - melodic
 
 # Source directory of catkin workspace
-catkin_src: ~/Sandbox/catkin_ws/dcat
+catkin_src: ~/Sandbox/ros_ws/src
+
+# Docker Parameters
+docker_params:
+  envs: "bash"

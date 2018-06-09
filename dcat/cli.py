@@ -9,7 +9,7 @@ from common import *
 
 class DCatCli:
     def __init__(self):
-        self.dcat = DCat()
+        self.dcat = [ DCat() for i in range(1) ]
 
     def program(self):
         parser = argparse.ArgumentParser(
