@@ -16,4 +16,6 @@ catkin_src: ~/Sandbox/ros_ws/src
 
 # Docker Parameters
 docker_params:
-  envs: "bash"
+  environment:
+    - "SHELL=/usr/bin/zsh"
+  network: "host"
